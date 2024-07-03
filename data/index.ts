@@ -1,5 +1,3 @@
-import { CardStack } from "@/components/ui/card-stack";
-
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -10,14 +8,11 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "My Achievements in College",
+    title: "Achievements in College",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
-    element: CardStack,
   },
   {
     id: 2,
@@ -26,8 +21,6 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
   },
   {
     id: 3,

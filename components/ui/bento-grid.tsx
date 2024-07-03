@@ -42,6 +42,13 @@ export const BentoGridItem = ({
         "row-span-1 relative rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4 border-red-500",
         className
       )}
+      style={{
+        //   add these two
+        //   you can generate the color from here https://cssgradient.io/
+        background: "rgb(4,7,29)",
+        backgroundColor:
+          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+      }}
     >
       {header}
       <div className="group-hover/bento:translate-x-2 transition duration-200">
