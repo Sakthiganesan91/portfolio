@@ -24,7 +24,7 @@ export const CardStack = ({
     {
       id: 1,
       content: "1st Place - Proof Of Concept",
-      subContent: "Kongu Engineering College for One Place Learning",
+      subContent: "@ Kongu Engineering College for One Place Learning",
       image: "/trophy.png",
     },
     {
@@ -37,7 +37,7 @@ export const CardStack = ({
       id: 3,
       content: "1st Place - Code Crackers",
       subContent: "@ Kongu Engineering College",
-      image: "../../public/trophy.png",
+      image: "./trophy.png",
     },
   ]);
 
@@ -57,13 +57,13 @@ export const CardStack = ({
   };
 
   return (
-    <div className="relative  h-60 w-60 md:h-60 md:w-96">
+    <div className="relative h-60 w-60 md:h-60 md:w-96">
       {cards.map((card, index) => {
         return (
           <>
             <motion.div
               key={card.id}
-              className="absolute dark:bg-black bg-white h-60 w-60 md:h-60 md:w-96 rounded-3xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1]  shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between m-4 md:m-16"
+              className="absolute dark:bg-black bg-white h-60 w-60 md:h-60 md:w-96 rounded-3xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1]  shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between m-4 md:m-8"
               style={{
                 transformOrigin: "top center",
               }}
@@ -76,13 +76,13 @@ export const CardStack = ({
               <div className="font-bold text-2xl text-neutral-700 dark:text-neutral-200">
                 {card.content}
               </div>
-              <div>
+              <div className="flex justify-center">
                 <img
-                  src={card.image}
                   height={100}
                   width={100}
+                  src={card.image}
                   alt="trophy"
-                  className="object-cover object-center w-full h-full"
+                  className="object-cover object-center"
                 />
               </div>
               <div className="font-bold text-neutral-700 dark:text-neutral-200">
