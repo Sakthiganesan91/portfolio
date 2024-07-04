@@ -1,10 +1,10 @@
 import React from "react";
+import { FlipWords } from "./ui/flip-words";
 import ShimmerButton from "./ui/shimmer-button";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 function Hero() {
-  const words = "Sakthiganesan, Full Stack Developer";
+  const words = ["Developer", "Enthusiast", "Learner"];
   return (
     <div className="pb-20 pt-36">
       <div>
@@ -32,10 +32,15 @@ function Hero() {
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-200 max-w-80">
             Blending Technology with Perfection
           </h2>
-          <TextGenerateEffect
+
+          <h1 className="text-center text-[40px] md:text-5xl lg:text-6xl text-white my-4">
+            Sakthiganesan G
+          </h1>
+          <FlipWords
             words={words}
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[40px] md:text-5xl lg:text-6xl mb-4"
           />
+
           <p className="text-center text-white md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Guy Passionate about Computer Technology
           </p>

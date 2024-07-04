@@ -8,20 +8,19 @@ function Grid() {
   return (
     <section id="about">
       <BentoGrid>
-        {/* <BentoGridItem
+        <BentoGridItem
           id={1}
-          title={"Achievements in College"}
+          title={""}
           description={""}
-        > */}
-        <div
           className={
-            "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]"
+            "lg:col-span-3 md:col-span-3 md:row-span-2 flex justify-center items-center"
           }
         >
-          <p className="text-4xl text-white">Achievements</p>
-          <CardStack />
-        </div>
-        {/* </BentoGridItem> */}
+          <div>
+            <CardStack />
+            <p className="text-4xl my-2 font-bold text-center">Achievements</p>
+          </div>
+        </BentoGridItem>
 
         <BentoGridItem
           id={2}
