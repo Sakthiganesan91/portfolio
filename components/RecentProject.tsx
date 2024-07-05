@@ -14,7 +14,7 @@ function RecentProject() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="sm:h-[41rem] h-[32re,] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+            className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
           >
             <PinContainer title={project.link} href={project.link}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden lg:h-[30vh] mb-10 sm:h-[40vh] h-[30vh]">
