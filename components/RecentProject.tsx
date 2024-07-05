@@ -10,7 +10,7 @@ function RecentProject() {
         A Small Showcase of{" "}
         <span className="text-purple">My Recent Projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8">
         {projects.map((project) => (
           <div
             key={project.id}
