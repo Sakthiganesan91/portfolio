@@ -1,3 +1,4 @@
+import EmailForm from "@/components/EmailForm";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
@@ -15,6 +16,7 @@ export default function Home() {
         <Grid />
         <RecentProject />
         <Experience />
+
         <Footer />
       </div>
     </main>
