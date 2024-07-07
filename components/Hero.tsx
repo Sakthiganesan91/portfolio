@@ -4,7 +4,7 @@ import ShimmerButton from "./ui/shimmer-button";
 import { Spotlight } from "./ui/Spotlight";
 
 function Hero() {
-  const words = ["Developer", "Enthusiast", "Learner"];
+  const words = ["Developer", "Learner"];
   return (
     <div className="pb-20 pt-36">
       <div>
