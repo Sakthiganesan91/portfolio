@@ -54,6 +54,7 @@ const TextArea = React.forwardRef<HTMLInputElement, InputProps>(
             resize: "none",
           }}
           name="message"
+          required
         />
       </motion.div>
     );

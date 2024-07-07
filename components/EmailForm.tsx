@@ -8,6 +8,8 @@ import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { cn } from "@/utils/cn";
 import { TextArea } from "./ui/textarea";
+
+import { ToastContainer, toast } from "react-toastify";
 export default function EmailForm() {
   const form = useRef<any>();
 
@@ -20,7 +22,16 @@ export default function EmailForm() {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast("Email Sent Successfully", {
+            position: "bottom-right",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme: "light",
+            progress: undefined,
+          });
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -44,6 +55,7 @@ export default function EmailForm() {
               placeholder="Alice"
               type="text"
               name="user_name"
+              required
             />
           </LabelInputContainer>
         </div>
@@ -54,6 +66,7 @@ export default function EmailForm() {
             placeholder="example@xyz.com"
             type="email"
             name="user_email"
+            required
           />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
@@ -71,6 +84,18 @@ export default function EmailForm() {
 
         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
       </form>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={1000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        theme="light"
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 }
